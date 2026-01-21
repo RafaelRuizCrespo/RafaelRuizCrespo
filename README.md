@@ -85,6 +85,6 @@ No terminal da pasta do projeto, instale as dependências com o seguinte código
 
 npm install
 
-Abra o Cypress para execução dos testes como o proximo código:
+Abra o Cypress para execução dos testes com o proximo código:
 
 npx cypress open
