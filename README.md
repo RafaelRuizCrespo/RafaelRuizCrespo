@@ -90,4 +90,4 @@ Abra o Cypress para execução dos testes com o proximo código:
 
 npx cypress open
 
-O codigo está dentro da pasta e2e, que esta dentro da pasta cypress
+O codigo está dentro da pasta e2e, que está dentro da pasta cypress
