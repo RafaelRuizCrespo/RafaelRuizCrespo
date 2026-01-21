@@ -78,7 +78,7 @@ Observação: Os campos first_name e last_name permitem números e símbolos sem
 
 Impacto: Risco de gerar dados inconsistentes para análise de marketing e de banco de dados.
 
-Como fazer para rodar o projeto
+Como fazer para rodar o projeto:
 
 Clone este repositório.
 
@@ -89,3 +89,5 @@ npm install
 Abra o Cypress para execução dos testes com o proximo código:
 
 npx cypress open
+
+O codigo está dentro da pasta e2e, que esta dentro da pasta cypress
