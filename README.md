@@ -79,6 +79,7 @@ Observação: Os campos first_name e last_name permitem números e símbolos sem
 Impacto: Risco de gerar dados inconsistentes para análise de marketing e de banco de dados.
 
 Como fazer para rodar o projeto
+
 Clone este repositório.
 
 No terminal da pasta do projeto, instale as dependências com o seguinte código:
