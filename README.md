@@ -33,7 +33,7 @@ Então o botão "Entrar" deve permanecer desabilitado.
 Cenário 4: Tentativa de cadastro sem aceite de termos
 Dado que eu acesso a página de registro
 Quando preencho todos os campos obrigatórios corretamente
-E não marco o checkbox de aceitação da política de privacidade
+E não aceito a política de privacidade
 Então o botão "Entrar" deve permanecer desabilitado.
 
 Cenários extras:
@@ -52,8 +52,13 @@ Então o botão "Entrar" deve estar desabilitado por padrão.
 
 Cenário 7: Validação de campo obrigatório após interação
 Dado que eu acesso a página de registro 
-Quando interajo com um campo campo obrigatório e o deixo vazio 
+Quando interajo com um campo obrigatório e o deixo vazio 
 Então o sistema deve garantir que o botão "Entrar" permaneça bloqueado.
+
+Tratamento de comportamentos assíncronos
+
+Durante a automação, eu identifiquei que o banner de cookies pode aparecer de forma assíncrona, inclusive durante a interação com o formulário.
+Para evitar falhas que interrompesse o teste, eu fiz uma abordagem defensiva que aceita os cookies sempre que o banner é detectado, sem impactar o fluxo dos testes caso ele não seja exibido.
 
 Relatório de observações e bugs
 Durante o desenvolvimento da automação, eu identifiquei pontos críticos que podem impactar tanto na experiência do usuário quanto na qualidade do produto:
@@ -86,7 +91,7 @@ No terminal da pasta do projeto, instale as dependências com o seguinte código
 
 npm install
 
-Abra o Cypress para execução dos testes com o proximo código:
+Abra o Cypress para execução dos testes com o próximo código:
 
 npx cypress open
 
